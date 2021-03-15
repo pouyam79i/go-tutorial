@@ -1,4 +1,8 @@
-package src
+/*
+Hello World app In Go
+ */
+
+package main
 
 import "fmt"
 

@@ -4,12 +4,13 @@ In this code I am going to use all kind of data types
 which can be used in Go
  */
 
-package src
+package main
 
 import "fmt"
 
 // Main fucntion of my app
 func main() {
+
 	var myBoolean bool
 	var myUint8bit uint8
 	//var my_uint_64bit uint64
@@ -37,9 +38,6 @@ func main() {
 	}
 
 	my_complexNum_64bit = 13 + 13i
-	fmt.Println(my_complexNum_64bit)
-
-
-
+	fmt.Println("This is a complex", my_complexNum_64bit)
 
 }
