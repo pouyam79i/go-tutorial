@@ -1,0 +1,29 @@
+package main
+
+import (
+	"bufio"
+	"fmt"
+	"os"
+	"strings"
+)
+
+func main() {
+	reader := bufio.NewReader(os.Stdin)
+	str1, _ := reader.ReadString('\n')
+	str2, _ := reader.ReadString('\n')
+	// fmt.Printf("Str1 was: %s - Str2 was: %s", , )
+	var word1 string = strings.TrimSpace(str1)
+	var word2 string = strings.TrimSpace(str2)
+	// fmt.Printf("%c is a char", word1[len(word1) - 1])
+	if len(word1) == 0 || len(word2) == 0 {
+		fmt.Print("NO")
+	} else {
+		word1 = strings.ToLower(word1)
+		word2 = strings.ToLower(word2)
+		if word1[0] == word2[len(word2)-1] {
+			fmt.Print("YES")
+		} else {
+			fmt.Print("NO")
+		}
+	}
+}
